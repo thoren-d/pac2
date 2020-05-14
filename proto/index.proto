@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message PackageIndex {
+    repeated File files = 1;
+}
+
+message File {
+    string name = 1;
+    uint64 offset = 2;
+    uint64 length = 3;
+}

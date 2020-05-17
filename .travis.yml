@@ -6,6 +6,9 @@ rust:
 - nightly
 
 jobs:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
   include:
     - stage: cargo release
       rust: stable

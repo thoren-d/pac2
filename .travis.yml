@@ -1,0 +1,17 @@
+language: rust
+
+rust:
+- stable
+- beta
+- nightly
+
+jobs:
+  include:
+    - stage: cargo release
+      rust: stable
+      script: echo "Deploying to crates.io"
+      deploy:
+        provider: cargo
+        edge: true
+        on:
+          tags: true

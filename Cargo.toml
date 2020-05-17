@@ -1,8 +1,17 @@
 [package]
 name = "pac2"
 version = "0.1.0"
+
 authors = ["Thoren Paulson <thoren.paulson@gmail.com>"]
+categories = ["filesystem"]
+description = "A simple, fast packfile format."
+documentation = "https://docs.rs/pac2"
 edition = "2018"
+keywords = ["archive", "gamedev", "pak", "zip"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Antigroup/pac2"
+
 
 [dependencies]
 protobuf = "2.10.1"

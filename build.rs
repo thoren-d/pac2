@@ -1,7 +1,5 @@
 use protobuf_codegen_pure as proto;
 
-
-
 fn main() {
     println!("cargo:rerun-if-changed=proto/index.proto");
     proto::run(proto::Args {
@@ -9,8 +7,8 @@ fn main() {
         input: &["proto/index.proto"],
         includes: &["proto"],
         customize: proto::Customize {
-          ..Default::default()
+            ..Default::default()
         },
-    }).expect("Protobuf code generation failed.");
-
+    })
+    .expect("Protobuf code generation failed.");
 }

@@ -1,0 +1,2 @@
+# This directory holds generated files, but git should ignore them.
+*.rs
